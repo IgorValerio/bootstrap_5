@@ -15,3 +15,6 @@ O arquivo de js era colocado no final das paginas pra que o js carregasse
 apos o HTML, porem hj em dia existe o recurso do defer na tag script 
 que permite escrever a tag <script></script> dentro da <header></header>
 e mas ainda sim carregar o js depois do HTML.
+//----Instalar pelo NPM
+npm init -y
+npm i bootstrap
