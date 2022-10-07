@@ -18,3 +18,29 @@ e mas ainda sim carregar o js depois do HTML.
 //----Instalar pelo NPM
 npm init -y
 npm i bootstrap
+
+//----Configurações Importantes
+Há dois elementos necessários para o correto functionamento do
+Bootstrap que precisamos atentar no HTML;
+DOCTYPE: O Bootstrap necessita das tags corretas de DOCTYPE;
+viewport: E também da tag que controle a responsividade;
+Sem estas Configurações ele pode funcionar, porem estamos sujeitos a 
+instabilidades;
+
+//----Inserindo nosso CSS
+Vamos linkar sempre abaixo do BS
+Nossas regras precisam ter um nivel de seleção pelo menos igual o
+do BS para substitui-las;
+
+<h1>Seção de layout</h1>
+    <button class="btn btn-primary">Clica em mim</button>
+
+    button{ /* assim não funciona*/
+    background-color: blueviolet;
+}
+
+/*Voce precisa usar as classes do bootstrap*/
+
+.btn-primary{
+    background-color: blueviolet;
+}

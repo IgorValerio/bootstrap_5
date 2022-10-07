@@ -1,0 +1,13 @@
+h1{
+    color: red;
+}
+
+button{ /* assim não funciona*/
+    background-color: blueviolet;
+}
+
+/*Voce precisa usar as classes do bootstrap*/
+
+.btn-primary{
+    background-color: blueviolet;
+}
