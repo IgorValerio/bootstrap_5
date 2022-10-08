@@ -179,3 +179,51 @@ Para ocupar três espaços: col-3;
 Lembrando que podemos separar em no máximo 12 divisões;
 E o espaço ocupado será proporcional, ou seja, em: col-11 
 e col-1 teremos uma coluna ocupando quase 100% da largura do row;
+
+<div class="container" id="largura-limitada">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-11"></div>
+        </div>
+    </div>
+
+    .col,
+.col-4,
+.col-2,
+.col-1,
+.col-11{
+    border: 2px dashed red;
+    height: 100%;
+    margin: 0;
+}
+
+#largura-limitada{
+    max-width: 500px;
+}
+
+//----Limitando o numero de colunas
+Podemos também limitar a quantidade de colunas em uma row;
+A classe a ser utilizada é: row-cols-*;
+Onde * é o numero limite;
+Assim o grid sempre vai respeitar este numero máximo na linha;
+
+<!-- Limitação de colunas-->
+    <div class="container">
+        <div class="row row-cols-2">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row row-cols-2">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row row-cols-2">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </div>
+
