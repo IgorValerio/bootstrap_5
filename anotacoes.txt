@@ -172,3 +172,10 @@ A estrutura do GRid é sempre: container > row > colunas;
 Onde temos o container para abrigar a seção;
 Row para determinar uma linha (largura 100%);
 Colunas para subdividir o container em até 12 partes;
+
+//----Tamanho das colunas
+Podemos ajustar o tamanho das colunas;
+Para ocupar três espaços: col-3;
+Lembrando que podemos separar em no máximo 12 divisões;
+E o espaço ocupado será proporcional, ou seja, em: col-11 
+e col-1 teremos uma coluna ocupando quase 100% da largura do row;
