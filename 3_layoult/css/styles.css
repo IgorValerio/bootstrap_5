@@ -99,7 +99,8 @@ button{ /* assim não funciona*/
 .col-2,
 .col-1,
 .col-11,
-.col-6 {
+.col-6,
+.col-3 {
     border: 2px dashed red;
     height: 100%;
     margin: 0;
@@ -120,6 +121,7 @@ button{ /* assim não funciona*/
 	height: 100%;
 }
 
-.col-6 {
+.col-6,
+.col-3 {
 	height: 50px;
 }
