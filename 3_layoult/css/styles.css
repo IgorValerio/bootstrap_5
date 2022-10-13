@@ -121,7 +121,8 @@ button{ /* assim não funciona*/
 	height: 100%;
 }
 
-.col-6,
-.col-3 {
+.vertical .col-6,
+.vertical .col-3,
+.vertical .col-4 {
 	height: 50px;
 }

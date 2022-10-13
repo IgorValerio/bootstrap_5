@@ -285,3 +285,27 @@ Podemos combinar tambem vertical e horizontal;
 				<div class="col-3"></div>
 			</div>
 		</div>
+
+//----Alinhamento de itens
+O alinhamento de item serve para alinharmos um item individualmente;
+Utilizamos classes como: align-self-center;
+Que alinha um elemento na vertical;
+Não há alinhamento unitário para a horizontal;
+
+//----Ordem dos itens
+É possível alterar a ordem que os itens são exibidos;
+Vamos colocar a classe: order-*;
+Onde * é a posição do elemento, sendo 1 o primeiro;
+Este recurso é util no desenvolvimento mobile, onde os elementos 
+costumam mudar a ordem;
+
+<!-- Ordem  dos elementos-->
+
+		<div class="container vertical">
+			<div class="row">
+				<div class="col-3 order-3">3</div>
+				<div class="col-3 order-1">1</div>
+				<div class="col-3 order-4">4</div>
+				<div class="col-3 order-2">2</div>
+			</div>
+		</div>
