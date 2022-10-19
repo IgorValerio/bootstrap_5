@@ -231,7 +231,7 @@ Assim o grid sempre vai respeitar este numero máximo na linha;
 
 //=========================================
 
-//----Alinhamento vertical
+//----Alinhamento vertical bootstrap
 As colunas dentro de uma row estão condicionadas ao 
 flex box;
 Ou seja, temos classes bem parecidas com as regras de 
@@ -270,7 +270,7 @@ Lembrando que esta classe sempre deve ficar no elemento pai (row)
 	height: 50px;
 }
 
-//----Alinhamento horizontal
+//----Alinhamento horizontal Boostrap
 O alinhamento horizontal segue a mesma premissa do vertical;
 Utilizamos classes no elemento pai (row) para condicionar os
 items na linha horizontal;
@@ -286,13 +286,31 @@ Podemos combinar tambem vertical e horizontal;
 			</div>
 		</div>
 
-//----Alinhamento de itens
+//----Alinhamento de itens Boostrap
 O alinhamento de item serve para alinharmos um item individualmente;
 Utilizamos classes como: align-self-center;
 Que alinha um elemento na vertical;
 Não há alinhamento unitário para a horizontal;
 
-//----Ordem dos itens
+<!-- Alinhamento de item -->
+		<div class="container vertical">
+			<div class="row">
+				<div class="col-3"></div>
+				<div class="col-3 align-self-center"></div>
+				<div class="col-3"></div>
+				<div class="col-3 align-self-center"></div>
+			</div>
+		</div>
+
+		<div class="container vertical">
+			<div class="row">
+				<div class="col-4"></div>
+				<div class="col-4 align-self-center"></div>
+				<div class="col-4 align-self-end"></div>
+			</div>
+		</div>
+
+//----Ordem dos itens Boostrap
 É possível alterar a ordem que os itens são exibidos;
 Vamos colocar a classe: order-*;
 Onde * é a posição do elemento, sendo 1 o primeiro;
@@ -309,3 +327,68 @@ costumam mudar a ordem;
 				<div class="col-3 order-2">2</div>
 			</div>
 		</div>
+
+//----Offset de colunas Boostrap
+Podemos tambem criar um espaçamento com offset;
+Ou seja, teremos uma margin da borda borda definida
+por uma quantidade de colunas;
+Exemplo: offset-md-3;
+Neste caso temos um offset de 3 colunas a esquerda;
+
+<!-- Offset-->
+
+		<div class="container vertical" id="offset">
+			<div class="row">
+				<div class="col-md-3 offset-md-1"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-4"></div>
+			</div>
+		</div>
+
+//----Gutters Bootstrap
+Os Gutters são intervalos que podemos inserir entre as colunas;
+É possivel inserir no eixo x ou y;
+Exemplo: gx-2 (horizontal);
+Ou: gy-4 (vertical)
+Os numeros quer utilizamos são baseados em rem da página, fonte
+do elemento root;
+O numero 3 é a referencia para 1rem;
+
+//----Bootstrap Icons
+Na versão 5 do bootstrap temos disponíveis icones em SVG e de forma
+gratuita.
+Isso nos possibilita na depender da biblioteca de terceiros.
+Podemos usar com ou sem o bootstrap.
+Pode ser instalado por npm, arquivos ou cdn.
+
+//----Instalando os icones do Bootstrap.
+Para utilizar os icones vamo utilizar a tag i
+Nesta tag vamos inserir classes respectivas para exibir um
+determinado icone, ex: bi bi-x-lg
+Estas classes apresentam um ícone de x.
+Os icones podem ser instalados independente do BS. Pra isso existe
+uma CDN, Packmanager e downloads apenas para icones.
+Os icones funcionam como fontes.
+
+//----Como encontrar os icone
+Sempre utilizar a documentação como referencia.
+Buscamos o icone necessario.
+Implementamos a suas classes e tag.
+Depois podemos fazer as alterações necessárias para inserir no
+projeto.
+Buscar os icones em ingles. ex: sun, smilles.
+
+//----O que são os icones
+Os ícones são considerados fontes, como arial.
+Ou seja, vamos alterar seu tamanho com font-size e sua cor com color.
+É um elemento inline, por causa da tag i.
+Então precisamos mudar o display, caso precise ser de bloco;
+Alternando a cor de fundo, mudamos o fundo da tag, e não há 
+alterações no ícone.

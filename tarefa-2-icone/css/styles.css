@@ -1,0 +1,22 @@
+.bi.bi-github {
+  font-size: 3rem;
+  color: brown;
+  margin: 20px;
+}
+
+.bi.bi-wordpress {
+  font-size: 3rem;
+  color: lightskyblue;
+  margin: 20px;
+}
+
+.bi.bi-windows {
+  font-size: 3rem;
+  color: blue;
+  margin: 20px;
+}
+
+.col {
+  padding: 20px;
+  border: 1px solid black;
+}
