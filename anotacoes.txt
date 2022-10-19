@@ -392,3 +392,5 @@ Ou seja, vamos alterar seu tamanho com font-size e sua cor com color.
 Então precisamos mudar o display, caso precise ser de bloco;
 Alternando a cor de fundo, mudamos o fundo da tag, e não há 
 alterações no ícone.
+<div class="col-12 col-md-6"> isso quer dizer que em telas grandes
+o grid vai ter 12 colunas e em telas medias 6 colunas.
